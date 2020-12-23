@@ -17,11 +17,16 @@
 
 # Índice
 
-- [Sobre](#sobre)
-- [Documentação](#documentacao)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Como Usar](#como-usar)
-- [Como Contribuir](#como-contribuir)
+- [Índice](#índice)
+  - [:bookmark: Sobre](#bookmark-sobre)
+  - [:books: Documentação](#books-documentação)
+  - [:rocket: Tecnologias Utilizadas](#rocket-tecnologias-utilizadas)
+  - [Projeto web](#projeto-web)
+  - [Projeto Mobile](#projeto-mobile)
+  - [:fire: Como usar](#fire-como-usar)
+  - [:recycle: Como contribuir](#recycle-como-contribuir)
+  - [:mortar_board: Quem ministrou?](#mortar_board-quem-ministrou)
+  - [:memo: License](#memo-license)
 
 <a id="sobre"></a>
 
