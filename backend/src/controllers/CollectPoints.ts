@@ -88,6 +88,34 @@ class CollectPoints {
       ...point
     })
   }
+
+  async update(req: Request, res: Response) {
+    const { id } = req.params
+    const point = req.body
+
+    const updated = await knex('points')
+      .where('id', id)
+      .update(point)
+
+    if (!updated) {
+      return res.status(400).json({ Message: `Não foi encontrado nenhum registo com id ${id}` })
+      }
+    
+    return res.status(200).send('Atualizado')
+}
+
+  async destroy(req: Request, res: Response) {
+    const { id } = req.params
+    const deleted = await knex('points')
+      .where('id', id)
+      .del()
+
+    if (!deleted) {
+      return res.status(401).json({ Message: `Não foi encontrado nenhum registo com id ${id}` })
+      }
+
+    return res.status(200).send('Deletado')
+  }
 }
 
 export default CollectPoints
