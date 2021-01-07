@@ -1,5 +1,5 @@
 <h3 align="center">
-    <img alt="Logo" title="#logo" width="300px" src=".github/logo.png">
+    <img alt="Logo" title="#logo" width="300px" src=".github/wp.jpg">
     <br><br>
     <b>Projeto para ajudar empresas na coleta de produtos que não devem ser jogados em lixos comuns.</b>  
     <br>
@@ -53,7 +53,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 
 ## Projeto web
 <h1 align="center">
-    <img alt="Web" src=".github/Video.gif" width="900px">
+    <img alt="Web" src=".github/wp.gif" width="900px">
 </h1>
 
 ## Projeto Mobile
