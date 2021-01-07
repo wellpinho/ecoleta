@@ -28,6 +28,12 @@ const Home = () => {
             <strong>Todos os pontos de coleta</strong>
           </Link>
         </main>
+
+        <footer>
+          <p>
+          Rio de Janeiro 2021/01/07 - Created by Wellington Pinho - Open to job: (21) 9818 - 46398
+          </p>
+        </footer>
       </div>
     </div>
   )
