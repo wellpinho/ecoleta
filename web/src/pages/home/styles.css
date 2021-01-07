@@ -52,8 +52,24 @@
   align-items: center;
   overflow: hidden;
 
-  margin-top: 40px;
+  margin-top: 30px;
 }
+
+#page-home .content main a:last-child {
+  width: 100%;
+  max-width: 360px;
+  height: 72px;
+  background: var(--title-color);
+  border-radius: 8px;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  margin-top: 6px;
+}
+
 
 #page-home .content main a span {
   display: block;
@@ -81,6 +97,10 @@
 
 #page-home .content main a:hover {
   background: #2fb86e;
+}
+
+#page-home .content main a:last-child:hover {
+  background: #3f0546;
 }
 
 @media (max-width: 900px) {

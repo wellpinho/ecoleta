@@ -2,23 +2,33 @@ import { Request, Response } from 'express'
 import knex from '../database/conn'
 
 class CollectPoints {
-  async index(req: Request, res:Response) {
-    const { city, uf, items } = req.query
-
-    const parsedItems = String(items)
-      .split(',')
-      .map(item => Number(item.trim()))
+  async index(req: Request, res: Response) {
+    const city = req.params.city
 
     const points = await knex('points')
-      .join('point_items', 'point_id', '=', 'point_items.point_id')
-      .whereIn('point_items.item_id', parsedItems)
       .where('city', String(city))
-      .where('uf', String(uf))
-      .distinct()
-      .select('points.*')
+      .select()
 
     return res.json(points)
   }
+
+  // async index(req: Request, res:Response) {
+  //   const { city, uf } = req.query
+
+  //   // const parsedItems = String(items)
+  //   //   .split(',')
+  //   //   .map(item => Number(item.trim()))
+
+  //   const points = await knex('points')
+  //     //.join('point_items', 'point_id', '=', 'point_items.point_id')
+  //     //.whereIn('point_items.item_id', parsedItems)
+  //     .where('city', String(city))
+  //     .where('uf', String(uf))
+  //     .distinct()
+  //     .select('points.*')
+
+  //   return res.json(points)
+  // }
 
 
   async show(req: Request, res: Response) {

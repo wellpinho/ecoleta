@@ -207,7 +207,7 @@ const CreatePoint = () => {
         <fieldset>
           <legend>
             <h2>Ítens de coleta</h2>
-            <span>Selecione o endereço no mapa</span>
+            <span>Selecione os itens de coleta</span>
           </legend>
 
           <ul className="items-grid">
